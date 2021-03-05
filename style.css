@@ -20,3 +20,41 @@ body {
 .box:nth-child(odd) {
   background-color: lightblue;
 }
+
+/* Responsive stuff */
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 22px;
+  }
+  .box1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .box1 {
+    display: none;
+  }
+  .box2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .box3 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+  .box4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .box5 {
+    display: block;
+  }
+}
