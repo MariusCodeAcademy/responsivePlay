@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  display: none;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+  margin: 5px;
+  background-color: gray;
+}
+
+.box:nth-child(odd) {
+  background-color: lightblue;
+}
